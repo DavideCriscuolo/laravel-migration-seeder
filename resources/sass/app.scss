@@ -1,0 +1,23 @@
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: black;
+}
+
+main {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    color: gold;
+}
+
+.card {
+    color: gold;
+    font-size: 20px;
+}
