@@ -29,8 +29,8 @@ class TrainTbaleSeeder extends Seeder
             $train->orario_arrivo = $faker->time();
             $train->codice_treno = $faker->bothify("???-###"); //questo crea una stringa con dei numeri e lettere randomiche
             $train->tot_carrozze = $faker->numberBetween(1, 20);
-            $train->in_orario = $faker->numberBetween(0, 1); //siccome nel db è un booleano idnicato con 0 e 1
-            $train->cancellato = $faker->numberBetween(0, 1);
+            $train->in_orario = $faker->boolean(); //siccome nel db è un booleano idnicato con 0 e 1
+            $train->cancellato = $faker->boolean();
             $train->save();
         }
     }
